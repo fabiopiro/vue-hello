@@ -15,14 +15,27 @@
         <div id="root">
 
             <!-- messaggio -->
-            <h1>{{message}}</h1>
+            <h1 :class="color">{{message}}</h1>
+
+            <!-- EXTRA cambia messaggio & cambia colore -->
+            <div>
+                <button @click="cambiaMessaggio">Cambia Messaggio</button>
+                <button @click="cambiaColore">Cambia Colore</button>
+            </div>
+            <!-- EXTRA -->
 
             <!-- immagine
             V-bind ci permette di inserire una variabile all’interno di un attributo di un tag
             forma estesa
             <img v-bind:src="image" alt="VUE logo">
             forma contratta -->
-            <img :src="image" alt="VUE logo">
+            <img id="image" :src="image" alt="VUE logo">
+
+            <!-- EXTRA cambia immagine -->
+            <div>
+                <button @click="cambiaImmagine">Cambia Immagine</button>
+            </div>
+            <!-- EXTRA cambia immagine -->
 
         </div>
 
