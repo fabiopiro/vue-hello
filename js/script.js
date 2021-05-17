@@ -11,8 +11,18 @@ var app = new Vue (
         el: "#root",
         // dichiaro le variabili di VUE
         data: {
-            message: "Hello World!"
-        }
+            message: "Hello World!",
+            image:"https://vuejs.org/images/logo.png"
+        },
+        // dichiaro le funzioni di VUE
+        // methods: {
+        //     funzione1: function () {
+        //         istruzioni;
+        //     },
+        //     funzione2: function () {
+        //         istruzioni;
+        //     }
+        // }
 
     }
 )

@@ -14,10 +14,19 @@
         <!-- Container di VUE -->
         <div id="root">
 
+            <!-- messaggio -->
             <h1>{{message}}</h1>
+
+            <!-- immagine
+            V-bind ci permette di inserire una variabile all’interno di un attributo di un tag
+            forma estesa
+            <img v-bind:src="image" alt="VUE logo">
+            forma contratta -->
+            <img :src="image" alt="VUE logo">
 
         </div>
 
+        <!-- JS -->
         <script src="js/script.js"></script>
     </body>
 </html>
